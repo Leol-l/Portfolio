@@ -3,6 +3,16 @@ import { Layout } from "../components/Layout";
 import { Section, ProjectGrid, Project } from "../components/Shared";
 import valdepharmImg from "../img/Capture_dashboard.png";
 import cesi from "../img/Capture_cesi.png"
+import qal from "../img/Qalit-code.png"
+import qal2 from "../img/Qalit-dash.png"
+import cat from "../img/cat.png"
+import cat2 from "../img/cat2.png"
+import cat3 from "../img/cat3.png"
+import cat4 from "../img/cat4.png"
+import Hack from "../img/Hack.avif"
+import Resto from "../img/Resto.jpg"
+import Lab1 from "../img/lab1.png"
+import Lab2 from "../img/lab2.png"
 
 export const allProjects: Project[] = [
   {
@@ -12,7 +22,7 @@ export const allProjects: Project[] = [
     fullDescription: "Dans le cadre de mon stage chez Valdepharm, j’ai déployé une solution d’IA locale basée sur Ollama afin d’automatiser l’analyse des commentaires du service informatique. Ce projet inclut la conception d'une API dédiée et d’un dashboard permettant aux équipes IT de visualiser les résultats. L’enjeu majeur était de garantir la confidentialité des données tout en fournissant une synthèse exploitable des interventions. Cet outil sert désormais de base de réflexion pour l'amélioration continue des processus au sein du service.",
     tags: ["API", "Next", "React", "Node", "Dashboards", "IA Locale"],
     category: "pro",
-    image: "",
+    image: valdepharmImg,
     date: "Janvier 2026 - Mars 2026",
     objectives: [
       "Automatiser l'analyse de sentiment des tickets support",
@@ -20,7 +30,7 @@ export const allProjects: Project[] = [
       "Optimiser le temps de traitement des retours utilisateurs"
     ],
     additionalImages: [
-      valdepharmImg,
+      ,
     ]
   },
   {
@@ -30,7 +40,7 @@ export const allProjects: Project[] = [
     fullDescription: "Passionné par l'infrastructure, j'ai construit mon propre Home Lab. Il tourne sous Proxmox et héberge un NAS, une base de données vectorielle pour mes projets IA, et diverses instances Docker. Ce projet reflète ma capacité à gérer une infrastructure de bout en bout, de la configuration matérielle au déployement logiciel. C'est mon laboratoire d'expérimentation quotidien pour tester de nouvelles technologies.",
     tags: ["Proxmox", "Docker", "NAS", "LLM Local"],
     category: "perso",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=800",
+    image: Lab1,
     date: "Depuis 2025",
     objectives: [
       "Centraliser le stockage de données personnel",
@@ -39,8 +49,7 @@ export const allProjects: Project[] = [
       "Expérimenter avec la virtualisation et les conteneurs"
     ],
     additionalImages: [
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
+      Lab2
     ]
   },
   {
@@ -50,7 +59,7 @@ export const allProjects: Project[] = [
     fullDescription: "Organisation complète d'une journée d'immersion : création du planning, coordination logistique pour 80 participants et animation transverse. En parallèle, mentorat d'une équipe de 5 lycéens (méthodologie, gestion des priorités et aide technique) pour transformer leur concept en projet concret.",
     tags: ["Management", "Gestion de projet", "Programmation", "Animation"],
     category: "etude",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
+    image: Hack,
     date: "Février 2025",
     objectives: [
       "Concevoir et organiser le planning pour 80 élèves",
@@ -69,7 +78,7 @@ export const allProjects: Project[] = [
     fullDescription: "Conception d'un système de surveillance de la qualiter de fiole. Les données sont collectées par un operateur, puis visualisées sur un dashboard JS.",
     tags: ["Dashboard", "Next", "React", "Node", "axios"],
     category: "etude",
-    image: "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?auto=format&fit=crop&q=80&w=800",
+    image: qal2,
     github: "https://github.com/Le0ll/Dashboard-de-Gestion-Qualit-",
     date: "Mai 2023",
     objectives: [
@@ -78,8 +87,7 @@ export const allProjects: Project[] = [
       "Aprendre le dev web avancé"
     ],
     additionalImages: [
-      "https://images.unsplash.com/photo-1551288049-bbdac8a28a80?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=800"
+      qal
     ]
   },
   {
@@ -89,7 +97,7 @@ export const allProjects: Project[] = [
     fullDescription: "Ce projet m'a permis de maîtriser les fondamentaux du SQL. J'ai conçu le schéma relationnel d'un système de gestion de restaurant, géré les requêtes complexes sous PostgreSQL via pgAdmin, et optimisé la structure des données pour assurer performance et intégrité.",
     tags: ["SQL", "PostgreSQL", "pgAdmin", "Data"],
     category: "etude",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
+    image: Resto,
     date: "Férvier 2025",
     objectives: [
       "Modéliser une base de données complexe (MCD/MLD)",
@@ -98,8 +106,6 @@ export const allProjects: Project[] = [
       "Automatiser les processus via des triggers et fonctions"
     ],
     additionalImages: [
-      "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&q=80&w=800"
     ]
   },
   {
@@ -109,7 +115,7 @@ export const allProjects: Project[] = [
     fullDescription: "Conception et programmation d'une catapulte automatisée. Ce projet intègre des aspects de mécanique, de mathématiques pour les trajectoires, et d'électronique pour le contrôle des moteurs.",
     tags: ["Mecanique", "Math", "Programation", "Electronique"],
     category: "etude",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
+    image: cat,
     date: "Janvier 2026",
     objectives: [
       "Calculer des trajectoires balistiques",
@@ -118,8 +124,9 @@ export const allProjects: Project[] = [
       "Intégrer des capteurs de précision"
     ],
     additionalImages: [
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80&w=800"
+      cat2,
+      cat3,
+      cat4
     ]
   }
 ];
