@@ -4,6 +4,9 @@ import { motion } from "motion/react";
 import { Github, Linkedin, Terminal, ChevronRight } from "lucide-react";
 import { Layout } from "../components/Layout";
 import { Section, ProjectGrid, Project } from "../components/Shared";
+import valdepharmImg from "../img/Capture_dashboard.png";
+import Lab from "../img/lab1.png"
+import photo from "../img/Photo.png"
 
 const featuredProjects: Project[] = [
   {
@@ -13,7 +16,7 @@ const featuredProjects: Project[] = [
     fullDescription: "Au sein de Valdepharm, j'ai mis en place une infrastructure d'IA locale utilisant Ollama. L'objectif était de traiter des volumes importants de commentaires et de faciliter la recherche dans une base documentaire dense. J'ai développé des scripts Python pour l'automatisation et créé des dashboards de suivi pour visualiser les résultats de l'analyse sémantique.",
     tags: ["Python", "Ollama", "Dashboards"],
     category: "pro",
-    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=800",
+    image: valdepharmImg,
     github: "#"
   },
   {
@@ -23,7 +26,7 @@ const featuredProjects: Project[] = [
     fullDescription: "Mon Home Lab est mon terrain de jeu favori. Sous Proxmox, je gère plusieurs machines virtuelles et containers Docker. Il intègre un NAS pour le stockage, une base de données vectorielle pour mes tests en IA, et une instance Ollama. C'est ici que je teste mes configurations réseau et mes déploiements avant de les passer en production.",
     tags: ["Proxmox", "Docker", "NAS"],
     category: "perso",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=800",
+    image: Lab,
     github: "#"
   }
 ];
@@ -131,7 +134,7 @@ export const Home = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative aspect-square rounded-2xl overflow-hidden border border-white/10 bg-slate-900">
                 <img 
-                  src="https://picsum.photos/seed/leo/600/600" 
+                  src={photo} 
                   alt="Léo Lesueur" 
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                   referrerPolicy="no-referrer"
