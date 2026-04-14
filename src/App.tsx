@@ -8,11 +8,13 @@ import { ProjectDetail } from "./pages/ProjectDetail";
 import { CVViewer } from "./pages/CVViewer";
 import { AtsCV } from "./components/AtsCV";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function App() {
   return (
     <Router>
       <ScrollToTop />
+      <Analytics />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projets" element={<Projects />} />
