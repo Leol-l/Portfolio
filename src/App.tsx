@@ -9,6 +9,7 @@ import { CVViewer } from "./pages/CVViewer";
 import { AtsCV } from "./components/AtsCV";
 import { ScrollToTop } from "./components/ScrollToTop";
 
+
 export default function App() {
   return (
     <Router>
