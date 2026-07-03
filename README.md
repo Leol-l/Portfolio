@@ -2,7 +2,7 @@
 
 Ce projet est un portfolio moderne et interactif développé avec **React**, **Vite** et **Tailwind CSS**. Il est conçu pour mettre en avant mon parcours, mes compétences en Intelligence Artificielle et mes projets techniques.
 
-## 🚀 Technologies utilisées
+## Technologies utilisées
 
 - **Frontend :** React 19, TypeScript
 - **Styling :** Tailwind CSS 4
@@ -11,14 +11,14 @@ Ce projet est un portfolio moderne et interactif développé avec **React**, **V
 - **Routing :** React Router 7
 - **Build Tool :** Vite 6
 
-## 📂 Structure du projet
+## Structure du projet
 
 - `src/components/` : Composants UI réutilisables (Layout, Shared components, etc.)
 - `src/pages/` : Pages principales de l'application (Home, Projects, Skills, Timeline, CV)
 - `src/img/` : Assets graphiques et captures d'écran des projets
 - `src/App.tsx` : Configuration des routes et point d'entrée principal
 
-## 🛠️ Installation et développement
+## Installation et développement
 
 1. **Installer les dépendances :**
    ```bash
@@ -35,7 +35,7 @@ Ce projet est un portfolio moderne et interactif développé avec **React**, **V
    npm run build
    ```
 
-## 📄 Fonctionnalités clés
+## Fonctionnalités clés
 
 - **Design Responsive :** Adapté à tous les écrans (Mobile, Tablette, Desktop).
 - **Visualiseur de CV :** Intégration directe du CV PDF pour une lecture rapide.
@@ -43,7 +43,7 @@ Ce projet est un portfolio moderne et interactif développé avec **React**, **V
 - **Détails des projets :** Pages dédiées pour chaque projet avec objectifs techniques et galerie d'images.
 - **Animations fluides :** Utilisation de Motion pour une expérience utilisateur premium.
 
-## 👤 Contact
+## Contact
 
 - **Nom :** Léo Lesueur
 - **Email :** leolesueur27@gmail.com
